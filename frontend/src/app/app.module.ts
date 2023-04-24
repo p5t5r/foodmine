@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/partials/header/header.component';
 import { FoodService } from './services/food/food.component';
 import { HomeComponent } from './components/pages/home/home.component';
-import {RouterModule} from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { RatingModule } from 'ng-starrating';
 
 @NgModule({
   declarations: [
@@ -17,8 +18,9 @@ import {RouterModule} from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
-  ],
+    RouterModule,
+    RatingModule
+  ],  
   providers: [FoodService],
   bootstrap: [AppComponent]
 })
